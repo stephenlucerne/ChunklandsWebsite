@@ -171,19 +171,21 @@
           <!-- Shown until donationApiBase is configured -->
           <div id="fallback-panel">
             <div class="notice notice--warn">
-              <strong>Automatic ranks aren't switched on yet.</strong> Donate using the
-              buttons below and message staff in Discord with your username to get your rank
-              applied by hand.
+              <strong>Donations aren't open yet.</strong> We're still setting up payment
+              processing for the server. Once it's live you'll be able to donate here and
+              have your rank applied to your account automatically.
             </div>
 
             <div class="btn-row" style="margin-top:20px">
-              <a class="btn btn--primary btn--lg" data-config-link="donate-paypal" href="#">Donate via PayPal</a>
-              <a class="btn btn--gold btn--lg" data-config-link="donate-kofi" href="#">Donate via Ko-fi</a>
+              <a class="btn btn--primary btn--lg" data-config-link="donate-paypal"
+                 data-coming-soon="PayPal: Coming soon" href="#">Donate via PayPal</a>
+              <a class="btn btn--gold btn--lg" data-config-link="donate-kofi"
+                 data-coming-soon="Ko-fi: Coming soon" href="#">Donate via Ko-fi</a>
             </div>
 
-            <p class="muted" style="font-size:0.84rem;margin-top:18px">
-              Both buttons open in a new tab. Neither is configured yet. Add your links in
-              <span class="inline-code">js/config.js</span>.
+            <p class="muted" style="font-size:0.86rem;margin-top:18px">
+              In the meantime the server is free to join and everything in it is
+              earnable in game. Voting is the easiest way to help out.
             </p>
           </div>
 

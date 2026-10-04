@@ -21,10 +21,13 @@
         a.setAttribute("aria-disabled", "true");
         a.removeAttribute("href");
         a.setAttribute("role", "button");
-        a.setAttribute("title", (label || "This link") + " is not configured yet");
+        a.setAttribute("title", label + " isn't set up yet");
+        // Swap the call to action for a placeholder so nobody clicks a dead link.
+        // data-coming-soon lets a link keep its identity, e.g. "PayPal: Coming soon".
+        a.textContent = a.getAttribute("data-coming-soon") || "Coming soon";
         a.addEventListener("click", function (e) {
           e.preventDefault();
-          toast((label || "This link") + " is coming soon");
+          toast(label + " is coming soon");
         });
         return;
       }
