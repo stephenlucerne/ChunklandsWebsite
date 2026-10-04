@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chunk Lands Minecraft Server | Buy Your Land, Block by Block</title>
+<meta name="description" content="Chunk Lands is a Minecraft survival server where you start on a single 16x16 chunk and buy your way out. Expand your land, level up with McMMO, trade at /market, and take on daily quests. Now in beta and new players wanted.">
+<meta name="theme-color" content="#0a0d12">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chunk Lands Minecraft Survival Server">
+<meta property="og:description" content="You start with one 16x16 chunk. Spend tokens, buy more land, and uncover a world that's yours. Now in beta.">
+<meta property="og:url" content="https://chunklands.net/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://chunklands.net/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =====================================================================
+     TOP BAR: server address + copy button (very top of the page)
+     ===================================================================== -->
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <span class="topbar__label">Server IP</span>
+
+    <div class="address">
+      <div class="address__field">
+        <span class="address__value" data-server-address>play.chunklands.net</span>
+      </div>
+      <button class="btn btn--sm" type="button" data-copy data-copy-label="Copy" data-copied-label="Copied!">
+        Copy
+      </button>
+    </div>
+
+    <div class="topbar__spacer"></div>
+
+    <a class="btn btn--primary btn--sm" href="#join">Join Server</a>
+  </div>
+</div>
+
+<!-- =====================================================================
+     NAV
+     ===================================================================== -->
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/favicon.svg" alt="" width="26" height="26">
+      <span>CHUNK<b>LANDS</b></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#ranks">Ranks</a></li>
+      <li><a href="#help">Help</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm nav__cta" href="#join">Join Server</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ===================================================================
+       HERO
+       =================================================================== -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <div class="badges">
+          <span class="badge badge--live">Beta: new players wanted</span>
+          <span class="badge">Survival</span>
+          <span class="badge">Since October 2026</span>
+        </div>
+
+        <p class="eyebrow">Minecraft Survival Server</p>
+
+        <h1>
+          You start with<br>
+          <span class="accent">one chunk.</span><br>
+          <span class="gold">Take the rest.</span>
+        </h1>
+
+        <p class="lead">
+          256 blocks. That's everything you get. Mine them, build on them, sell what you
+          find, and spend your tokens on the chunks next door. Repeat until the map is
+          yours. Chunk Lands is survival with a price on the horizon. Nothing else is held
+          back.
+        </p>
+
+        <div class="hero__cta">
+          <div class="address">
+            <div class="address__field">
+              <span class="address__value" data-server-address>play.chunklands.net</span>
+            </div>
+            <button class="btn" type="button" data-copy data-copy-label="Copy IP" data-copied-label="Copied!">
+              Copy IP
+            </button>
+          </div>
+
+          <div class="btn-row">
+            <a class="btn btn--gold" href="#join">How to join</a>
+            <a class="btn btn--ghost" href="donate.html">Support the server</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive expander lives here on desktop, below on mobile -->
+      <div class="expander" id="expander-mount"></div>
+    </div>
+
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__k">16×16</div>
+          <div class="stat__l">Starting land</div>
+        </div>
+        <div class="stat">
+          <div class="stat__k">Unlimited</div>
+          <div class="stat__l">Chunks to buy</div>
+        </div>
+        <div class="stat">
+          <div class="stat__k">McMMO</div>
+          <div class="stat__l">Skills &amp; combat</div>
+        </div>
+        <div class="stat">
+          <div class="stat__k">Oct 2026</div>
+          <div class="stat__l">Server launch</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       THE MECHANIC
+       =================================================================== -->
+  <section id="how">
+    <div class="wrap mechanic__grid">
+      <div>
+        <p class="eyebrow">The core loop</p>
+        <h2>Start small.<br>Stay a long time.</h2>
+        <p class="lead">
+          Most servers either hand you a big map or lock you into a floating island.
+          Chunk Lands does neither. You get one chunk and a reason to keep logging in.
+        </p>
+
+        <ol class="steps">
+          <li>
+            <span class="steps__n" aria-hidden="true">1</span>
+            <span class="steps__b">
+              <strong>Spawn on a single 16×16 chunk</strong>
+              <span>256 blocks of dirt, grass and whatever's underneath it. It's all yours, including the bad parts.</span>
+            </span>
+          </li>
+          <li>
+            <span class="steps__n" aria-hidden="true">2</span>
+            <span class="steps__b">
+              <strong>Play normally, earn tokens</strong>
+              <span>Mine, build, farm, fight. Everything you do fills up the token economy. Skills count too. This is a full McMMO server.</span>
+            </span>
+          </li>
+          <li>
+            <span class="steps__n" aria-hidden="true">3</span>
+            <span class="steps__b">
+              <strong>Spend tokens on adjacent chunks</strong>
+              <span>Each neighbouring chunk is purchasable. Price climbs the further you push out, so early land is cheap and the frontier is expensive.</span>
+            </span>
+          </li>
+          <li>
+            <span class="steps__n" aria-hidden="true">4</span>
+            <span class="steps__b">
+              <strong>Uncover a world-sized plot</strong>
+              <span>Buy enough chunks and you've got a substantially large piece of land with a real build on it. That's the whole game.</span>
+            </span>
+          </li>
+        </ol>
+
+        <p class="muted" style="margin-top:24px">
+          It's Skyblock's endgame without Skyblock's restrictions. Full survival
+          progression, mob spawning, redstone and nether access all still in play.
+        </p>
+      </div>
+
+      <div class="panel panel--sunken">
+        <p class="eyebrow">Your land over time</p>
+
+        <div class="progression">
+          <figure class="progression__fig">
+            <div class="minigrid" aria-hidden="true">
+              <i class="cell" style="grid-area:3/3"></i>
+            </div>
+            <figcaption><strong>Day one</strong>1 chunk</figcaption>
+          </figure>
+
+          <figure class="progression__fig">
+            <div class="minigrid" aria-hidden="true">
+              <i class="cell" style="grid-area:2/3"></i><i class="cell" style="grid-area:3/2"></i>
+              <i class="cell" style="grid-area:3/3"></i><i class="cell" style="grid-area:3/4"></i>
+              <i class="cell" style="grid-area:4/3"></i>
+            </div>
+            <figcaption><strong>First week</strong>5 chunks</figcaption>
+          </figure>
+
+          <figure class="progression__fig">
+            <div class="minigrid" aria-hidden="true">
+              <i class="cell" style="grid-area:2/3"></i><i class="cell" style="grid-area:2/4"></i>
+              <i class="cell" style="grid-area:3/2"></i><i class="cell" style="grid-area:3/3"></i>
+              <i class="cell" style="grid-area:3/4"></i><i class="cell" style="grid-area:3/5"></i>
+              <i class="cell" style="grid-area:4/2"></i><i class="cell" style="grid-area:4/3"></i>
+              <i class="cell" style="grid-area:4/4"></i><i class="cell" style="grid-area:4/5"></i>
+              <i class="cell" style="grid-area:5/3"></i><i class="cell" style="grid-area:5/4"></i>
+              <i class="cell" style="grid-area:5/5"></i><i class="cell" style="grid-area:5/6"></i>
+              <i class="cell" style="grid-area:3/6"></i><i class="cell" style="grid-area:2/2"></i>
+            </div>
+            <figcaption><strong>Long term</strong>a real base</figcaption>
+          </figure>
+        </div>
+
+        <p class="muted" style="font-size:0.86rem; margin-top:18px">
+          Chunk costs climb the further you push from spawn, so the first few buys are
+          cheap and the frontier gets expensive. Exact pricing is shown in-game.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FEATURES
+       =================================================================== -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">What's on the server</p>
+        <h2>Everything a survival server should have</h2>
+        <p class="lead">
+          The chunk economy is the hook, but this is a full server built on top of it.
+          Here's what's already running.
+        </p>
+      </div>
+
+      <div class="features">
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="1" y="1" width="6" height="6" fill="#4c9a3f"/><rect x="9" y="1" width="6" height="6" fill="#4c9a3f"/><rect x="1" y="9" width="6" height="6" fill="#4c9a3f"/><rect x="9" y="9" width="6" height="6" fill="none" stroke="#e8b53c" stroke-width="1.5"/></svg></div>
+          <h3>Land Expansion</h3>
+          <p>The core plugin. Own your starting chunk, then buy land outward, chunk by chunk, with a token price that scales as you expand.</p>
+          <span class="feature__cmd">/chunks</span>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="6" y="2" width="4" height="1" fill="#e8eef5"/><rect x="7" y="3" width="2" height="7" fill="#c9d4e0"/><rect x="4" y="10" width="8" height="2" fill="#e8b53c"/><rect x="7" y="12" width="2" height="3" fill="#6b4a2c"/><rect x="5" y="15" width="6" height="1" fill="#e8b53c"/></svg></div>
+          <h3>McMMO</h3>
+          <p>Classic skill-based progression. Mining, woodcutting, fishing, alchemy, swords, archery and more. Levels that actually change how strong you are.</p>
+          <span class="feature__cmd">/mcmmo skills</span>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="1" y="4" width="14" height="4" fill="#6b4a2c"/><rect x="1" y="8" width="14" height="7" fill="#8a5f38"/><rect x="1" y="7" width="14" height="1" fill="#4e351d"/><rect x="1" y="11" width="14" height="1" fill="#6b4a2c"/><rect x="6" y="6" width="4" height="4" fill="#e8b53c"/></svg></div>
+          <h3>Player Market</h3>
+          <p>List what you farm and what you mine for sale, set your own price, and let other players buy it. A working economy instead of a dead shop.</p>
+          <span class="feature__cmd">/market</span>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="5" y="2" width="6" height="3" fill="#7fe6ee"/><rect x="3" y="5" width="10" height="3" fill="#4fd6e0"/><rect x="1" y="8" width="14" height="2" fill="#3bb8c4"/><rect x="4" y="10" width="2" height="4" fill="#4fd6e0"/><rect x="7" y="10" width="2" height="4" fill="#3bb8c4"/><rect x="10" y="10" width="2" height="4" fill="#4fd6e0"/></svg></div>
+          <h3>Unique Items</h3>
+          <p>A custom item set that isn't in vanilla or anywhere else, sold through the server shop. Earn them, or buy them outright.</p>
+          <span class="feature__cmd">/shop</span>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="1" y="8" width="2" height="2" fill="#4fd06d"/><rect x="3" y="10" width="2" height="2" fill="#4fd06d"/><rect x="5" y="11" width="2" height="2" fill="#4fd06d"/><rect x="7" y="9" width="2" height="2" fill="#4fd06d"/><rect x="9" y="7" width="2" height="2" fill="#4fd06d"/><rect x="11" y="5" width="2" height="2" fill="#4fd06d"/><rect x="13" y="3" width="2" height="2" fill="#4fd06d"/></svg></div>
+          <h3>Daily Quests</h3>
+          <p>A fresh set of challenges every day. Complete them for tokens, gear or keys, and for a reason to log in tomorrow.</p>
+          <span class="feature__cmd">/quests</span>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="1" y="4" width="3" height="4" fill="#e8b53c"/><rect x="6" y="2" width="4" height="6" fill="#e8b53c"/><rect x="12" y="4" width="3" height="4" fill="#e8b53c"/><rect x="1" y="8" width="14" height="3" fill="#f7cf5e"/><rect x="1" y="12" width="14" height="3" fill="#c9992a"/></svg></div>
+          <h3>Ranks</h3>
+          <p>Support the server and pick up a rank with its own colour, commands and perks. Earnable in game, too. Play long enough and you'll climb.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="7" y="2" width="2" height="10" fill="#4fd06d"/><rect x="5" y="4" width="6" height="2" fill="#4fd06d"/><rect x="3" y="6" width="10" height="2" fill="#4fd06d"/><rect x="2" y="13" width="12" height="2" fill="#2b3644"/></svg></div>
+          <h3>Voting Rewards</h3>
+          <p>Vote for the server on the server lists, claim your reward, and get back in the game. Voting is the easiest way to help out.</p>
+          <span class="feature__cmd">/vote</span>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" width="20" height="20" aria-hidden="true" focusable="false"><rect x="4" y="1" width="2" height="3" fill="#e8b53c"/><rect x="10" y="1" width="2" height="3" fill="#e8b53c"/><rect x="1" y="3" width="14" height="12" fill="#2b3644"/><rect x="1" y="3" width="14" height="3" fill="#e8b53c"/><rect x="4" y="8" width="3" height="3" fill="#4c9a3f"/><rect x="9" y="8" width="3" height="3" fill="#4c9a3f"/></svg></div>
+          <h3>Regular Updates</h3>
+          <p>Brand new server with an active dev. New features, balance changes and bug fixes land weekly, informed by player feedback.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SKYBLOCK COMPARISON
+       =================================================================== -->
+  <section id="versus">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">How it's different</p>
+        <h2>Skyblock, minus the sandbox part</h2>
+        <p class="lead">
+          The land-expansion idea comes straight from Skyblock. Almost nothing else does.
+        </p>
+      </div>
+
+      <div class="compare">
+        <div class="compare__col">
+          <h3>Classic Skyblock</h3>
+          <p class="compare__tag">The original</p>
+          <ul>
+            <li>Avoid the void at all costs</li>
+            <li>One tree, one chest, one starting block</li>
+            <li>Limited mob spawning, artificial rules</li>
+            <li>Sandboxing a handful of item types</li>
+            <li>Little reason to build anything large</li>
+          </ul>
+        </div>
+
+        <div class="compare__col compare__col--us">
+          <h3>Chunk Lands</h3>
+          <p class="compare__tag">What we run</p>
+          <ul>
+            <li>Normal survival rules, real overworld, real mobs</li>
+            <li>A 16×16 chunk to start, and a plan to grow it</li>
+            <li>Only constraint is land, and you can buy more</li>
+            <li>Full item set, custom items on top</li>
+            <li>Land grows until it's a genuinely big base</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       RANKS
+       =================================================================== -->
+  <section id="ranks">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Ranks</p>
+        <h2>Support the server, get a rank</h2>
+        <p class="lead">
+          Ranks are a thank-you, not a paywall. Every one of them keeps the server online
+          for the next month. Prices and the full perk list are confirmed in Discord.
+        </p>
+      </div>
+
+      <!-- EDIT ME: rename these ranks and set real prices/benefits -->
+      <div class="ranks">
+
+        <div class="rank">
+          <div class="rank__name">Newcomer</div>
+          <div class="rank__price">Free for everyone</div>
+          <ul>
+            <li>1 starting chunk</li>
+            <li>Full survival access</li>
+            <li>Access to /market and /shop</li>
+            <li>Daily quests from day one</li>
+          </ul>
+        </div>
+
+        <div class="rank rank--featured">
+          <div class="rank__name">Supporter</div>
+          <div class="rank__price">$5 one-time</div>
+          <ul>
+            <li>Coloured name in chat</li>
+            <li>Home, teleport and TPA commands</li>
+            <li>Extra chunk slots on start</li>
+            <li>A token top-up every month</li>
+          </ul>
+        </div>
+
+        <div class="rank">
+          <div class="rank__name">Premium</div>
+          <div class="rank__price">$15 one-time</div>
+          <ul>
+            <li>Everything in Supporter</li>
+            <li>2× token earnings from quests</li>
+            <li>Cosmetics and join message</li>
+            <li>Priority queue support</li>
+          </ul>
+        </div>
+
+        <div class="rank rank--staff">
+          <div class="rank__name">Staff</div>
+          <div class="rank__price">Apply in Discord</div>
+          <ul>
+            <li>Builder and moderator roles</li>
+            <li>Help shape new features</li>
+            <li>Early access to beta content</li>
+            <li>Recognised around spawn</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="muted" style="text-align:center; margin-top:28px">
+        Not ready to spend anything? <strong>Vote for the server</strong> and claim rewards
+        for free. <a href="#help">See how</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       JOIN CTA
+       =================================================================== -->
+  <section id="join" class="band">
+    <div class="wrap band__inner">
+      <div>
+        <p class="eyebrow">Join now</p>
+        <h2>Copy the IP.<br>You're in.</h2>
+        <p class="lead">
+          Add the address to your server list, hit join, and you'll be standing on your
+          own 16×16 chunk of world.
+        </p>
+
+        <div class="address">
+          <div class="address__field">
+            <span class="address__value" data-server-address>play.chunklands.net</span>
+          </div>
+          <button class="btn" type="button" data-copy data-copy-label="Copy" data-copied-label="Copied!">
+            Copy
+          </button>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn--gold btn--lg" href="#help">Read the FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       RECRUITMENT
+       =================================================================== -->
+  <section id="community">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Help wanted</p>
+        <h2>The server is new. Help shape it.</h2>
+        <p class="lead">
+          Chunk Lands launched in October 2026 and we're actively looking for people to
+          push it further. Everything below is a real, open invitation.
+        </p>
+      </div>
+
+      <div class="recruit">
+
+        <article class="recruit__card">
+          <h3>Beta Testers</h3>
+          <p>
+            We're testing the land-expansion plugin in the real world and we want players
+            who'll hit it hard: break it, exploit it, tell us what's confusing. You'll
+            get the newest features before anyone else and a say in what lands next.
+          </p>
+          <ul>
+            <li>Test new plugin releases early</li>
+            <li>Report bugs and edge cases</li>
+            <li>Shape balance and features</li>
+          </ul>
+          <a class="btn btn--primary" data-config-link="discord" href="#">Join the Discord</a>
+        </article>
+
+        <article class="recruit__card recruit__card--build">
+          <h3>Builders</h3>
+          <p>
+            We're looking for builders to design and build a spawn area people actually
+            want to screenshot. If you've done a spawn, a hub or a region plot before,
+            we'd like to see it.
+          </p>
+          <ul>
+            <li>Design and build the spawn hub</li>
+            <li>Land claim and WorldEdit experience</li>
+            <li>Portfolio or builds in a server to show</li>
+          </ul>
+          <a class="btn btn--ghost" data-config-link="discord" href="#">Apply in Discord</a>
+        </article>
+
+        <article class="recruit__card recruit__card--ideas">
+          <h3>Feature Requests</h3>
+          <p>
+            We're actively taking suggestions and feature requests. If there's a plugin,
+            a mechanic or a QoL change you want, tell us. The roadmap is genuinely open
+            and early ideas get built.
+          </p>
+          <ul>
+            <li>New plugin and integration ideas</li>
+            <li>Quality-of-life improvements</li>
+            <li>Balance feedback on tokens and pricing</li>
+          </ul>
+          <a class="btn btn--ghost" data-config-link="discord" href="#">Submit an idea</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FAQ
+       =================================================================== -->
+  <section id="help">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Questions</p>
+        <h2>FAQ</h2>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>How do I join?</summary>
+          <div class="faq__body">
+            Add <code>play.chunklands.net</code> to your Minecraft server list and connect.
+            No whitelist or application needed right now. You're free to play immediately.
+          </div>
+        </details>
+
+        <details>
+          <summary>What do I actually start with?</summary>
+          <div class="faq__body">
+            One 16×16 chunk: 256 blocks. Nothing else, no items, no gear. Everything after
+            that you earn or buy yourself. It is deliberately a hard start.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is this just Skyblock?</summary>
+          <div class="faq__body">
+            The land expansion is the same idea, but nothing else is restricted. You play
+            on a normal overworld with normal survival rules, mob spawning and full item
+            access. Check the <a href="#versus">comparison</a> for the specifics.
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I buy more land?</summary>
+          <div class="faq__body">
+            Earn tokens through normal play, quests and skill progression, then spend them
+            on chunks adjacent to land you already own. Prices rise the further out you go.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is there a whitelist?</summary>
+          <div class="faq__body">
+            Not at the moment. The point of the beta is to get as many new players through
+            the door as possible. Join, play a bit, and let us know what you think.
+          </div>
+        </details>
+
+        <details>
+          <summary>Which version and edition?</summary>
+          <div class="faq__body">
+            Check the Discord for the current supported version and client requirements.
+            We keep this current as the server updates.
+          </div>
+        </details>
+
+        <details>
+          <summary>How do ranks work?</summary>
+          <div class="faq__body">
+            Ranks are available through <a href="donate.html">donations</a> and are applied
+            automatically to your account. No staff request needed. See
+            <a href="#ranks">Ranks</a> for what each one includes.
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I donate and get a rank automatically?</summary>
+          <div class="faq__body">
+            Yes. Run <code>/donate</code> in game to get your personal redeem code, enter
+            it on the <a href="donate.html">donate page</a>, pay, and the rank lands on your
+            account automatically. If something goes wrong, message staff and it'll be sorted
+            by hand.
+          </div>
+        </details>
+
+        <details>
+          <summary>Something's broken / I found a bug</summary>
+          <div class="faq__body">
+            Tell us in Discord with what you were doing and roughly when it happened. Bug
+            reports from beta players are the single most useful thing you can send us.
+          </div>
+        </details>
+
+        <details>
+          <summary>I want to build the spawn area</summary>
+          <div class="faq__body">
+            Yes please. Drop your portfolio or a link to your builds in Discord with the
+            <code>builder</code> tag. <a href="#community">Read more</a>.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       DONATE CTA
+       =================================================================== -->
+  <section id="donate" class="band">
+    <div class="wrap band__inner">
+      <div>
+        <p class="eyebrow">Support the server</p>
+        <h2>Keep Chunk Lands online</h2>
+        <p class="lead">
+          Hosting a Minecraft server isn't free, and donations go straight back into
+          keeping it running, plus paying our builders. In return you get a rank, applied
+          to your account automatically.
+        </p>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn--gold btn--lg" href="donate.html">Donate</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <img src="assets/favicon.svg" alt="" width="26" height="26">
+          <span>CHUNK<b>LANDS</b></span>
+        </a>
+        <p class="muted" style="font-size:0.9rem; max-width:34ch">
+          A survival Minecraft server about buying your way out of a single chunk.
+          Launched October 2026, in beta.
+        </p>
+      </div>
+
+      <div>
+        <h4>Play</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#ranks">Ranks</a></li>
+          <li><a href="#help">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Community</h4>
+        <ul>
+          <li><a data-config-link="discord" href="#">Discord</a></li>
+          <li><a href="#community">Beta testing</a></li>
+          <li><a href="#community">Builders wanted</a></li>
+          <li><a href="#community">Feature requests</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a data-config-link="donate-paypal" href="#">PayPal</a></li>
+          <li><a data-config-link="donate-kofi" href="#">Ko-fi</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Chunk Lands. Server IP: <strong class="mono" data-server-address>play.chunklands.net</strong></p>
+      <p>Not affiliated with Mojang Studios or Microsoft.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/expand.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate | Chunk Lands</title>
+<meta name="description" content="Support the Chunk Lands Minecraft server and receive your rank automatically. Get your in-game redeem code, pay, and your rank is applied for you.">
+<meta name="theme-color" content="#0a0d12">
+<meta name="robots" content="noindex, follow">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://chunklands.net/donate.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Server address stays available at the very top on every page -->
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <span class="topbar__label">Server IP</span>
+    <div class="address">
+      <div class="address__field">
+        <span class="address__value" data-server-address>play.chunklands.net</span>
+      </div>
+      <button class="btn btn--sm" type="button" data-copy data-copy-label="Copy" data-copied-label="Copied!">Copy</button>
+    </div>
+    <div class="topbar__spacer"></div>
+    <a class="btn btn--primary btn--sm" href="index.html#join">Join Server</a>
+  </div>
+</div>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/favicon.svg" alt="" width="26" height="26">
+      <span>CHUNK<b>LANDS</b></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html#how">How it works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#ranks">Ranks</a></li>
+      <li><a href="index.html#help">Help</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm nav__cta" href="index.html#join">Join Server</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Support the server</p>
+      <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Keep Chunk Lands<br><span class="gold">online</span></h1>
+      <p class="lead">
+        Donations pay for hosting and for our builders. In return you get a rank applied
+        to your account automatically. No ticket, no waiting for a staff member.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="mechanic__grid">
+
+        <div>
+          <h2>How automatic ranks work</h2>
+          <p class="lead">
+            Payment platforms don't know your Minecraft username, so we link the two with a
+            one-time code you generate in game. The server recognises the code, the payment
+            provider confirms the payment, and a rank lands on your account. Three steps,
+            about thirty seconds.
+          </p>
+
+          <ol class="flow">
+            <li>
+              <div>
+                <b>Get your code in game</b>
+                <p>Join the server and run <code data-redeem-cmd>/donate</code>. You'll get a
+                short personal code, for example <span class="inline-code">CL-4F9K2Q</span>, tied to your account.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <b>Enter it here and choose an amount</b>
+                <p>Fill in the form on this page. Your code travels with the payment, so the
+                system knows exactly who the donation is for.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <b>Pay, and the rank applies itself</b>
+                <p>Your rank is granted automatically, usually within a few seconds and at
+                worst before your next server restart. Join and check with <code>/rank</code>.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="notice" style="margin-top:26px">
+            <strong>Prefer not to create a code?</strong> You can still donate directly below
+            and message staff with your username. We'll grant the rank manually.
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 style="font-size:1.9rem">Get your rank</h2>
+
+          <!-- Shown when js/config.js has donationApiBase configured -->
+          <form class="form" id="donate-form" hidden>
+            <div class="field">
+              <label for="code">In-game redeem code</label>
+              <input class="input input--upper" type="text" id="code" name="code"
+                     placeholder="CL-XXXXXX" required autocomplete="off"
+                     spellcheck="false" pattern="[A-Za-z0-9-]{4,24}">
+              <span class="hint">Run <span data-redeem-cmd>/donate</span> in game to generate this.</span>
+            </div>
+
+            <div class="field">
+              <label for="username">Minecraft username</label>
+              <input class="input" type="text" id="username" name="username"
+                     placeholder="YourExactUsername" required autocomplete="off"
+                     spellcheck="false" maxlength="16">
+              <span class="hint">Must match the name you join with.</span>
+            </div>
+
+            <fieldset class="field" style="border:0;padding:0;margin:0">
+              <legend style="padding:0;margin-bottom:7px">Amount</legend>
+              <div class="tiers">
+                <label class="tier">
+                  <input type="radio" name="tier" value="supporter" checked>
+                  <span>$5<small>Supporter</small></span>
+                </label>
+                <label class="tier">
+                  <input type="radio" name="tier" value="premium">
+                  <span>$15<small>Premium</small></span>
+                </label>
+                <label class="tier">
+                  <input type="radio" name="tier" value="legend">
+                  <span>$30<small>Legend</small></span>
+                </label>
+                <label class="tier">
+                  <input type="radio" name="tier" value="custom">
+                  <span>Other<small>Choose next</small></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field" id="custom-amount-field" hidden>
+              <label for="amount">Custom amount (USD)</label>
+              <input class="input" type="number" id="amount" name="amount"
+                     min="5" max="500" step="1" placeholder="10">
+              <span class="hint">Minimum $5.</span>
+            </div>
+
+            <button class="btn btn--gold btn--lg" type="submit" id="submit-btn">
+              Continue to payment
+            </button>
+
+            <p class="muted" style="font-size:0.82rem;margin:0">
+              You'll be handed off to PayPal to complete the payment. Your rank is granted
+              from the confirmed payment, not from this page.
+            </p>
+          </form>
+
+          <!-- Shown until donationApiBase is configured -->
+          <div id="fallback-panel">
+            <div class="notice notice--warn">
+              <strong>Automatic ranks aren't switched on yet.</strong> Donate using the
+              buttons below and message staff in Discord with your username to get your rank
+              applied by hand.
+            </div>
+
+            <div class="btn-row" style="margin-top:20px">
+              <a class="btn btn--primary btn--lg" data-config-link="donate-paypal" href="#">Donate via PayPal</a>
+              <a class="btn btn--gold btn--lg" data-config-link="donate-kofi" href="#">Donate via Ko-fi</a>
+            </div>
+
+            <p class="muted" style="font-size:0.84rem;margin-top:18px">
+              Both buttons open in a new tab. Neither is configured yet. Add your links in
+              <span class="inline-code">js/config.js</span>.
+            </p>
+          </div>
+
+          <div id="result" hidden></div>
+
+          <hr style="border:0;border-top:1px solid var(--line);margin:26px 0">
+
+          <h3 style="font-size:1.4rem">What donations pay for</h3>
+          <ul style="margin:0;padding-left:20px;display:grid;gap:9px;font-size:0.92rem;color:var(--text-dim)">
+            <li>Server hosting and hardware</li>
+            <li>Backups, so your land isn't lost</li>
+            <li>Paying our spawn-area builders</li>
+            <li>Custom plugin development</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Donation questions</p>
+        <h2>Before you donate</h2>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>Will you really auto-deliver the rank?</summary>
+          <div class="faq__body">
+            Yes. Once the automatic flow is enabled, the rank is granted from a confirmed
+            payment, not from a form submission. Until then, staff apply it manually.
+          </div>
+        </details>
+
+        <details>
+          <summary>What if my rank doesn't arrive?</summary>
+          <div class="faq__body">
+            Message staff in Discord with your username and the code you used. Payments are
+            verified against the provider before anything is granted, so anything paid for
+            gets delivered.
+          </div>
+        </details>
+
+        <details>
+          <summary>Does my username matter?</summary>
+          <div class="faq__body">
+            Yes. The rank is granted to a Minecraft account, so your username must match
+            the name you connect with. If you play on cracked clients and your name changes,
+            tell staff and we'll move it.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is it one-time or recurring?</summary>
+          <div class="faq__body">
+            One-time. Ranks don't expire and there are no subscriptions. Some ranks include
+            a recurring token top-up, which is noted on the <a href="index.html#ranks">ranks</a>
+            page.
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I get a rank without spending money?</summary>
+          <div class="faq__body">
+            Yes. Vote for the server, take on daily quests, and play long enough. In-game
+            ranks are earnable and that's the point of a beta. Donations are a shortcut, not
+            the only route.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is it really OK to donate while the server is in beta?</summary>
+          <div class="faq__body">
+            Yes. Hosting costs don't wait for the beta to finish, and supporting the server
+            now is what keeps the beta running so you can play it. Ranks are cosmetic and
+            perk-based. Nothing that makes you win.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="border:0;padding-top:0">
+      <p>© <span data-year>2026</span> Chunk Lands. Server IP: <strong class="mono" data-server-address>play.chunklands.net</strong></p>
+      <p><a href="index.html">Back to the site</a> · Not affiliated with Mojang Studios or Microsoft.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/donate.js"></script>
+</body>
+</html>
